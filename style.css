@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
+/*important*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto+Serif:ital,opsz,wght@1,8..144,200&display=swap');
+
 body {
     margin:0;
     background-image: url("/pexels-luis-gomes-546819.jpg");
@@ -22,29 +25,7 @@ nav ul{
 
 
 
-@media (max-width: 700px) {
-    nav ul li a{   
-        display: inline-flex;
-        background-color: #47A1D1;
-        position: relative;
-        opacity: 90%;
-        height:10px;
-        justify-content: center;
-        
-    }
-  }
 
-  @media (max-width: 700px) {
-    nav ul li a:hover{   
-        display: inline-flex;
-        background-color: #000000;
-        position: sticky;
-        opacity: 90%;
-        height:5px;
-        justify-content: center;
-        
-    }
-  }
 
 
 
@@ -57,6 +38,47 @@ nav ul li a{
 
 }
 
+@media only screen and (min-width:265px) and (max-width:700px){
+
+
+    header .container {
+        background-color: #0a1b25e8;
+        color: #ffffff;
+        width: 375px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+    
+    .education{
+        font-size:15px;
+        margin-right:15px;
+    }
+
+    #bio{
+        font-size:15px;
+        margin:10px;
+    }
+
+    #aboutme{
+        font-size:15px;
+    }
+  
+    nav ul{
+        background-color: silver;
+    }
+    
+    
+    nav ul li a{
+        display: inline-flex;
+        font-size: 10px;
+    }
+
+     
+}
+
+
+
 nav ul li {
     list-style: none;
     padding-top: 15px;
@@ -67,11 +89,13 @@ nav ul li:hover{
    background-color: #24526B;
    border-radius: 20px;
    transition-duration: 0.50s;
+   
 
 }
 
 nav ul li a:hover{
     color: white;
+    
 
 }
 
@@ -87,14 +111,15 @@ nav ul li a:hover{
 header .picture {
     display: flex;
     justify-content: flex-start;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin: 20px 0 0 40px;
 } 
 
 
 
 
 header .content {
+    font-family: 'Merienda One', cursive;
+    font-family: 'Roboto Serif', serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -103,6 +128,8 @@ header .content {
     font-size:30px;
 
 }
+
+
 
 .frame {
     border: 0px solid black;
@@ -166,7 +193,8 @@ hr {
 main{
     background-color: #000B0FE6;
     text-align: left;
-    font-family: 'Montserrat';
+    font-family: 'Merienda One', cursive;
+    font-family: 'Roboto Serif', serif;
     padding: 10px;
     color: #FFF;
     font-size: 18px;
@@ -201,13 +229,27 @@ footer{
 
 
 
-.bi-github{
-    color:black
 
+
+
+.bi-github{
+    color:black;
+
+}
+
+.bi-github:hover{
+    color:#41bdff;
+    transition-duration: 1s;
 }
 
 .bi-linkedin{
     color: #000000;
+    
+}
+
+.bi-linkedin:hover{
+    color: #41bdff;
+    transition-duration: 1s;
 }
 
 
@@ -215,8 +257,18 @@ footer{
     color:black;
 }
 
+.bi-telephone:hover{
+    color:#41bdff;
+    transition-duration: 1s;
+}
+
 .bi-envelope{
     color: black;
+}
+
+.bi-envelope:hover{
+    color:#41bdff;
+    transition-duration: 1s;
 }
 
 
