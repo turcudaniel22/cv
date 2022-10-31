@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-
-/*important*/
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto+Serif:ital,opsz,wght@1,8..144,200&display=swap');
+
+$white-color:#ffffff;
+$blue-color:#41bdff;
+$black-color: #000000;
 
 body {
     margin:0;
@@ -15,12 +17,21 @@ nav{
     position: sticky;
     background-color: rgb(192, 192, 192);
     height: 20px;
+    ul{
+        margin-top: -13px;
+    }
+    li a{
+        color: $black-color;
+        font-family: 'Playfair Display', serif;
+        padding: 10px;
+        text-decoration: none;
+    
+    
+    }
+
     
 }
 
-nav ul{
-    margin-top: -13px;
-}
 
 
 
@@ -29,21 +40,15 @@ nav ul{
 
 
 
-nav ul li a{
-    color: rgb(0, 0, 0);
-    font-family: 'Playfair Display', serif;
-    padding: 10px;
-    text-decoration: none;
 
 
-}
 
 @media only screen and (min-width:265px) and (max-width:700px){
 
 
     header .container {
         background-color: #0a1b25e8;
-        color: #ffffff;
+        color: $white-color;
         width: 375px;
         display: flex;
         justify-content: flex-start;
@@ -69,7 +74,7 @@ nav ul li a{
     }
     
     
-    nav ul li a{
+    li{
         display: inline-flex;
         font-size: 10px;
     }
@@ -83,18 +88,19 @@ nav ul li {
     list-style: none;
     padding-top: 15px;
     display: inline;
+    &:hover{
+        background-color: #24526B;
+        border-radius: 20px;
+        transition-duration: 0.50s;
+        
+     
+     }
 }
 
-nav ul li:hover{
-   background-color: #24526B;
-   border-radius: 20px;
-   transition-duration: 0.50s;
-   
 
-}
 
 nav ul li a:hover{
-    color: white;
+    color: $white-color;
     
 
 }
@@ -132,7 +138,7 @@ header .content {
 
 
 .frame {
-    border: 0px solid black;
+    border: 0px solid $black-color;
     box-shadow: -24px -23px 71px 48px rgba(0,0,0,0.6);
     -webkit-box-shadow: -24px -23px 71px 48px rgba(0,0,0,0.6);
     -moz-box-shadow: -24px -23px 71px 48px rgba(0,0,0,0.6);
@@ -159,7 +165,7 @@ header {
 header .container {
     font-family: 'Montserrat', sans-serif;
     background-color:#0a1b25e8 ;
-    color: #ffffff;
+    color: $white-color;
     width: 100%;
 
 }
@@ -169,7 +175,7 @@ header .container {
 
 
 header .container .link {
-    color:black;
+    color:$black-color;
     display: flex;
     justify-content:space-evenly;
     
@@ -185,7 +191,7 @@ header .container .link {
 }
 
 hr {
-   background-color: rgba(0, 0, 0, 0);
+   background-color: $black-color;
    border: 0px solid #47A1D1;
 
 }
@@ -196,7 +202,7 @@ main{
     font-family: 'Merienda One', cursive;
     font-family: 'Roboto Serif', serif;
     padding: 10px;
-    color: #FFF;
+    color: $white-color;
     font-size: 18px;
     margin:30px;
 }
@@ -233,41 +239,41 @@ footer{
 
 
 .bi-github{
-    color:black;
+    color:$black-color;
 
 }
 
 .bi-github:hover{
-    color:#41bdff;
+    color:$blue-color;
     transition-duration: 1s;
 }
 
 .bi-linkedin{
-    color: #000000;
+    color: $black-color;
     
 }
 
 .bi-linkedin:hover{
-    color: #41bdff;
+    color: $blue-color;
     transition-duration: 1s;
 }
 
 
 .bi-telephone{
-    color:black;
+    color:$black-color;
 }
 
 .bi-telephone:hover{
-    color:#41bdff;
+    color:$blue-color;
     transition-duration: 1s;
 }
 
 .bi-envelope{
-    color: black;
+    color: $black-color;
 }
 
 .bi-envelope:hover{
-    color:#41bdff;
+    color:$blue-color;
     transition-duration: 1s;
 }
 
