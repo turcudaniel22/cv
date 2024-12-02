@@ -8,7 +8,7 @@ A modern CV template built with **HTML** and **SASS**.
 ## 📂 Project Structure  
 
 ```plaintext
-cv-project/
+cv/
 ├── index.html           # Main HTML file
 ├── images/              # Images used in the CV
 │   ├── pexels-luis-gomes-546819.jpg
